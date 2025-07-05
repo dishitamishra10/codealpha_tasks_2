@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('night')">Night</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    <button onclick="filterImages('food')">Food</button>
+    <button onclick="filterImages('people')">People</button>
+  </div>
+
+  <div class="gallery">
+    <!-- NATURE (6) -->
+    <img src="nature/1.jpg" class="nature" onclick="openLightbox(this)">
+    <img src="nature/2.jpg" class="nature" onclick="openLightbox(this)">
+    <img src="nature/3.jpg" class="nature" onclick="openLightbox(this)">
+    <img src="nature/4.jpg" class="nature" onclick="openLightbox(this)">
+    <img src="nature/5.jpg" class="nature" onclick="openLightbox(this)">
+    <img src="nature/6.jpg" class="nature" onclick="openLightbox(this)">
+
+    <!-- CITY (6) -->
+    <img src="city/1.jpg" class="city" onclick="openLightbox(this)">
+    <img src="city/2.jpg" class="city" onclick="openLightbox(this)">
+    <img src="city/3.jpg" class="city" onclick="openLightbox(this)">
+    <img src="city/4.jpg" class="city" onclick="openLightbox(this)">
+    <img src="city/5.jpg" class="city" onclick="openLightbox(this)">
+    <img src="city/6.jpg" class="city" onclick="openLightbox(this)">
+
+    <!-- NIGHT (7) -->
+    <img src="night/1.jpg" class="night" onclick="openLightbox(this)">
+    <img src="night/2.jpg" class="night" onclick="openLightbox(this)">
+    <img src="night/3.jpg" class="night" onclick="openLightbox(this)">
+    <img src="night/4.jpg" class="night" onclick="openLightbox(this)">
+    <img src="night/5.jpg" class="night" onclick="openLightbox(this)">
+    <img src="night/6.jpg" class="night" onclick="openLightbox(this)">
+    <img src="night/7.jpg" class="night" onclick="openLightbox(this)">
+
+    <!-- ANIMALS (6) -->
+    <img src="animal/1.jpg" class="animals" onclick="openLightbox(this)">
+    <img src="animal/2.jpg" class="animals" onclick="openLightbox(this)">
+    <img src="animal/3.jpg" class="animals" onclick="openLightbox(this)">
+    <img src="animal/4.jpg" class="animals" onclick="openLightbox(this)">
+    <img src="animal/5.jpg" class="animals" onclick="openLightbox(this)">
+    <img src="animal/6.jpg" class="animals" onclick="openLightbox(this)">
+
+    <!-- FOOD (6) -->
+    <img src="food/1.jpg" class="food" onclick="openLightbox(this)">
+    <img src="food/2.jpg" class="food" onclick="openLightbox(this)">
+    <img src="food/3.jpg" class="food" onclick="openLightbox(this)">
+    <img src="food/4.jpg" class="food" onclick="openLightbox(this)">
+    <img src="food/5.jpg" class="food" onclick="openLightbox(this)">
+    <img src="food/6.jpg" class="food" onclick="openLightbox(this)">
+
+    <!-- PEOPLE (6) -->
+    <img src="people/1.jpg" class="people" onclick="openLightbox(this)">
+    <img src="people/3.jpg" class="people" onclick="openLightbox(this)">
+    <img src="people/4.jpg" class="people" onclick="openLightbox(this)">
+    <img src="people/5.jpg" class="people" onclick="openLightbox(this)">
+    <img src="people/6.jpg" class="people" onclick="openLightbox(this)">
+    <img src="people/2.jpg" class="people" onclick="openLightbox(this)">
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="">
+    <div class="nav">
+      <button onclick="prevImage(event)">⟨</button>
+      <button onclick="nextImage(event)">⟩</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
